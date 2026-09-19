@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load dataset
-df = pd.read_csv("sales_dataset.csv")
+df = pd.read_excel(r"C:\Users\HP\Downloads\ApexPlanet_Dataset.xlsx")
 
 # Convert Order_Date to datetime
 df["Order_Date"] = pd.to_datetime(df["Order_Date"], errors="coerce")
